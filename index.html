@@ -1,123 +1,399 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Portfolio</title>
         <meta charset="utf-8"/>
         <meta name="veiwport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/all.css">
-        <link rel="stylesheet" href="assets/css/style.css"> 
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/8adbc8433e.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     </head>
     <body>
-
-        
-
-        <!--Body-->
-
-        <div class="container">
-
-            <!-- Navbar -->
-            <nav>
-                <ul class="nav-links">
-                    <li><i class="fa fa-github" style="font-size: 25px; color:white"></i><a href="https://github.com/NikolaV96"> GitHub</a></li>
-                    <li><i class="fa fa-linkedin-square" style="font-size: 25px; color:white"></i><a href="https://www.linkedin.com/in/nikola-vachev/"> LinkedIn</a></li>
-                    <li><i class="fa fa-address-book-o" style="font-size: 25px; color:white"></i><a href="assets/cv/CV-Resume.pdf" target="_blank"> CV/Resume</a></li>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#services" class="menu-btn">Services</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#certificates" class="menu-btn">Certificates & Projects</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
                 </ul>
-            </nav>
-
-            <!--Headline-->
-            <div class="portfolio">
-                <h2>My Portfolio</h2>
-                <p>A showcase of my projects and abilities</p>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
+        </nav>
 
-            <div class="intro">
-                <h2>My Name is Nikola Vachev</h2>
-                <p>I'm passionate about games development and even more so about technology.</p>
-                <p>Check out my projects below</p>
+        <!-- home section start -->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Nikola Vachev</div>
+                    <div class="text-3">And I'm a <span class="typing"></span></div>
+                    <a href="#contact">Hire me</a>
+                </div>
             </div>
+        </section>
 
-            <!-- Projects -->
+        <!-- about section start -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About me</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <div class="image"></div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">I'm Nikola and I am a <span class="typing-2"></span></div>
+                        <p>All my life I have always been fascinated by computers, not only how they operated 
+                            but also how they were made. This is the one of the reasons why I started
+                            IT & Computer Science in the first place. I set myself the task where I would acquire
+                            the necessary knowledge to create my own innovative technologies. I am also a big 
+                            advocate of self-improvement and learning is my passion.</p>
+                        <a href="assets/cv/CV-Resume.pdf" target="_blank">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services section start -->
+        <section class="services" id="services">
+            <div class="max-width">
+                <h2 class="title">My services</h2>
+                <div class="serv-content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="text">Web Design</div>
+                            <p>Amidst of all my qualifications I also specialize in Web Development and Web Design. I started my journey by building my portoflio and as a hobby.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="text">Advertising</div>
+                            <p>Among of all the projects I have done, my goal was to get some exposure by sharing on social media and groups for developers.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-code"></i>
+                            <div class="text">Apps Design/Programming</div>
+                            <p>My main experience in Games Development has led to designing and developing applications with the newest technologies available to the public.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section start  -->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">My skills</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text">My creative works & experiences.</div>
+                        <p>My journey towards becoming a programmer has led me to successfully working on many different projects.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="line javascript"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>C#</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="line csharp"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Python</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="line python"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="imghold">
+            <img src="assets/cv/grad-certificate.jpg" alt="">
+        </div>
+        <div class="imghold2">
+            <img src="assets/cv/ment-certificate.png" alt="">
+        </div>
+
+        <section class="certificates" id="certificates">
+            <div class="max-width">
+                <h2 class="title">Certificates & Projects</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <img class="img-btn" src="assets/cv/grad-certificate.jpg" alt="">
+                            <div class="text">Graduation Cetificate</div>
+                            <p>This is certificate is a testimony to my four years of undergraduate degree in computer science!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img class="img-btn2" src="assets/cv/ment-certificate.png" alt="">
+                            <div class="text">Mentoring Cetificate</div>
+                            <p>Before graduation I had the opportunity to be mentored by David Hammond from IBM, by educating me on how does the industry work!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gOjLRhWpb-k" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="text">False Flags: Serious Games Project</div>
+                            <p>This was a solo development project in which I had to develop an educational game! The biggest 
+                                challenge for this prototype was to create something that would make people want to play it and subconscious learn 
+                                from it. The goal of the game is to learn to recognize the flags of the individual countries of all seven continents.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UbBz4sxpoXY" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="text">Project Parrot: Team Based Project</div>
+                            <p>Project parrot is a turn-based game with point and click mechanics. The project was brought to life 
+                                by 4 team members which had their own responsibilities towards the game development. My input for it was making the designs 
+                                for the level and art style. Due to a small schedule of 3 months we were able to implement only the core gameplay of the game. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lkZbFQvFE1g" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="text">Nathan Hill: Paranormal Investigator Project</div>
+                            <p>The Nathan Hill project is First Person Shooter. The game is all about paranormal investigations. 
+                                On this project we were a four-man team, and each was given the opportunity to build a level for the game. We had to 
+                                come with a level design which will tie up well with the narrative of the overall story. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/pxW2mzsOQak" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="text">Machine Learning: Honours Project</div>
+                            <p>This was my honors project for university. I wanted to get out of my comfort zone and create 
+                                something that I have never done. The goal was to prove that a machine learning algorithms can adapt to every environment 
+                                without being explicitly programmed to do so.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/L90pRDBGhNk" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="text">Collaborative Vertual Environments</div>
+                            <p>The first ever collaborative virtual environments that we created was for 
+                                us to be able to access the web through the game, without compromising the vulnerability of the system. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/IqBckL8IiEU" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="text">Shadow Clash: First Game Project</div>
+                            <p>Shadow clash was the first ever game I made in Game Make. It is a 2D platformer, 
+                                action-oriented game with a small narrative. This project was made with the use of game maker programming 
+                                language and all of the animation and textures done by me as well.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/W1QuV_G4AUE" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="text">Cell Defender: Web Game Project</div>
+                            <p>This was the first ever web-based game that I have created. Cell defender is a 2D game which was
+                                made with the help of Phaser 3 game engine. The inspiration of this game came from space invaders, but instead of 
+                                shooting and dodging bullets, the aim is to use the platform to bounce back the bullets back at the attackers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact me</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Get in Touch</div>
+                        <p>As of now this contact page is still under development, if you would like to get in touch, please do so by emailing me with the provided information below! </p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Nikola Vachev</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div class="sub-title">Glasgow, Scotland</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">E-mail</div>
+                                    <div class="sub-title">vachevn@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Message me</div>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <span>Created By <a href="#">NVCoding</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        </footer>
+
+            <!-- Projects
             <div class="projects">
 
-                <h2>False Flags</h2>
-                <article>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gOjLRhWpb-k" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p><br><br> This was a solo development project in which I had to develop an educational game! The biggest 
-                        challenge for this prototype was to create something that would make people want to play it and subconscious learn 
-                        from it. The goal of the game is to learn to recognize the flags of the individual countries of all seven continents. 
-                    <br><br><a href="https://github.com/NikolaV96/SeriousGamesProject.git"><i class="fa fa-github"></i> GitHub Repo</a></p>
-                </article>
+                <div class="pholder">
+                    <h2>False Flags</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gOjLRhWpb-k" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p><br><br> This was a solo development project in which I had to develop an educational game! The biggest 
+                            challenge for this prototype was to create something that would make people want to play it and subconscious learn 
+                            from it. The goal of the game is to learn to recognize the flags of the individual countries of all seven continents. 
+                        <br><br><a href="https://github.com/NikolaV96/SeriousGamesProject.git"><i class="fa fa-github"></i> GitHub Repo</a></p>
+                </div>
 
-                <h2>Project Parrot</h2>
-                <article>
+                <div class="pholder">
+                    <h2>Project Parrot</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UbBz4sxpoXY" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p><br><br> Project parrot is a turn-based game with point and click mechanics. The project was brought to life 
                         by 4 team members which had their own responsibilities towards the game development. My input for it was making the designs 
                         for the level and art style. Due to a small schedule of 3 months we were able to implement only the core gameplay of the game. 
                     </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UbBz4sxpoXY" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
+                        
+                </div>
 
-                <h2>Nathan Hill</h2>
-                <article>
+                <div class="pholder">
+                    <h2>Nathan Hill</h2>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/lkZbFQvFE1g" 
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p><br><br> The Nathan Hill project is First Person Shooter. The game is all about paranormal investigations. 
                         On this project we were a four-man team, and each was given the opportunity to build a level for the game. We had to 
                         come with a level design which will tie up well with the narrative of the overall story. 
                     </p>
-                </article>
-                
-                <h2>Machine Learning</h2>
-                <article>
+                </div>
+
+                <div class="pholder">
+                    <h2>Machine Learning</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pxW2mzsOQak" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p><br><br> This was my honors project for university. I wanted to get out of my comfort zone and create 
                         something that I have never done. The goal was to prove that a machine learning algorithms can adapt to every environment 
                         without being explicitly programmed to do so. 
-                    <br><br><a href="https://github.com/NikolaV96/MLAgent.git"><i class="fa fa-github"></i> GitHub Repo</a></p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pxW2mzsOQak" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
+                    <br><br><a href="https://github.com/NikolaV96/MLAgent.git"><i class="fa fa-github"></i> GitHub Repo</a></p>   
+                </div>
 
-                <h2>Collaborative Virtual Environments</h2>
-                <article>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L90pRDBGhNk" 
+                <div class="pholder">
+                    <h2>Collaborative Virtual Environments</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/L90pRDBGhNk" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p><br><br> The first ever collaborative virtual environments that we created was for 
+                            us to be able to access the web through the game, without compromising the vulnerability of the system. 
+                        </p>
+                </div>
+                <div class="pholder">
+                    <h2>Shadow Clash</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IqBckL8IiEU" 
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p><br><br> The first ever collaborative virtual environments that we created was for 
-                        us to be able to access the web through the game, without compromising the vulnerability of the system. 
-                    </p>
-                </article>
-
-                <h2>Shadow Clash</h2>
-                <article>
                     <p><br><br> Shadow clash was the first ever game I made in Game Make. It is a 2D platformer, 
                         action-oriented game with a small narrative. This project was made with the use of game maker programming 
                         language and all of the animation and textures done by me as well.
                     </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IqBckL8IiEU" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
+                </div>
 
-                <h2>Cell Defender</h2>
-                <article>
+                <div class="pholder">
+                    <h2>Cell Defender</h2>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/W1QuV_G4AUE" 
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p><br><br> This was the first ever web-based game that I have created. Cell defender is a 2D game which was
                         made with the help of Phaser 3 game engine. The inspiration of this game came from space invaders, but instead of 
                         shooting and dodging bullets, the aim is to use the platform to bounce back the bullets back at the attackers.
-                    </p>
-                </article>
+                    </p>            
+                </div>
             
             </div>
-
             <footer>
                 <p>
-                    <i class="fa fa-copyright" style="font-size: 25px; color:white"></i> copyright 2020
+                    <i class="fa fa-copyright" style="font-size: 25px; color:white"></i> copyright 2021
                 </p>
-            </footer>
-        </div>
-
+            </footer> -->
+       
+        <script src="/assets/javascript/app.js"></script>
     </body>
 </html>
